@@ -1,51 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<div class="visbile-scrollbar">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /><meta name="apple-mobile-web-app-capable" content="yes" />
-<script>(function() {
-    
-    var win = window,
-        doc = win.document;
-  
-    // If there's a hash, or addEventListener is undefined, stop here
-    if ( !location.hash || !win.addEventListener ) {
-  
-      //scroll to 1
-      window.scrollTo( 0, 1 );
-      var scrollTop = 1,
-  
-      //reset to 0 on bodyready, if needed
-      bodycheck = setInterval(function(){
-        if( doc.body ){
-          clearInterval( bodycheck );
-          scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
-          win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-        } 
-      }, 15 );
-  
-      if (win.addEventListener) {
-        win.addEventListener("load", function(){
-          setTimeout(function(){
-            //reset to hide addr bar at onload
-            win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-          }, 0);
-        }, false );
-      }
-    }
-  
-  })();
-    </script>
-    <title>
-    Mobile Application
-</title>
-<h1> By CIAI </h1>
-<style>
-    ::-webkit-scrollbar {
-      width: 15px;
-    }
-    </style>
-<p>
-    <header> The following are the different widgets you can access:</header>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+  	<title>Cross-device Address Bar Hide</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+    <h1> The following are the different widgets you can access:</h1>
     <ol>
         <li>Buttons</li>
         <li>Charts</li>
@@ -57,5 +19,8 @@
         <li>Tables</li>
         <li>Others</li>
     </ol>
-</p></div>
+  <body>
+  <!-- https://github.com/scottjehl/Hide-Address-Bar -->
+	<p>The script on this page should hide the address bar on iOS and Android.</p>
+  </body>
 </html>
