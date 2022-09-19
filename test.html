@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="1000"/>
+    <meta name="MobileOptimized" content="1"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <style>CSS{
     margin:0;
     padding:0;
 }
-html, body {
+body {
+	min-height: 540px;
+	[orient="potrait"]{min-height: 540px;}
+	[orient="landscape"]{min-height: 400px;}
     width:100%;
     height:90%;
     overflow:visible;
+	
 }</style>
   </head>
     <h1> The following are the different widgets you can access:</h1>
@@ -40,8 +44,4 @@ html, body {
         <li>Tables</li>
         <li>Others</li>
     </ol>
-  <body>
-  <!-- https://github.com/scottjehl/Hide-Address-Bar -->
-	<p>The script on this page should hide the address bar on iOS and Android.</p>
-  </body>
 </html>
