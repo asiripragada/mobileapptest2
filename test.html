@@ -18,7 +18,11 @@ body {
     width:100%;
     height:90%;
     overflow:visible;
-	dom.disable_window_open_feature.location
+	<script>
+	var winFeature =
+        'location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes';
+window.open('test.html','null',winFeature);
+	</script>
 	
 }</style>
   </head>
